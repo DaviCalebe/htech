@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #0f4c81 0%, #1a8fe3 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo para a imagem de fundo da capa */
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    /* Ajuste a opacidade conforme necessário */
+    z-index: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #1a8fe3;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.feature-icon {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .feature-icon {
+    transform: scale(1.1);
+    color: #1a8fe3;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 7rem;
+}
+
+/* Estilo para o espaço reservado da logo - SEM FUNDO AZUL */
+.logo-placeholder {
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f4c81;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Estilo para o espaço reservado da logo no rodapé - SEM FUNDO AZUL */
+.footer-logo-placeholder {
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-button i {
+    font-size: 30px;
+    color: white;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.feature-badge {
+    background: linear-gradient(135deg, #0f4c81 0%, #1a8fe3 100%);
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Estilos para imagens na seção Quem Somos */
+.about-image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+.about-image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a8fe3;
+    font-size: 14px;
+}
+
+/* Estilo para o rodapé com gradiente */
+.footer-gradient {
+    background: linear-gradient(135deg, #0f4c81 0%, #1a8fe3 100%);
+    position: relative;
+}
+
+/* Padrão de fundo para o rodapé */
+.footer-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 10;
+}
+
+/* Estilos para as imagens de prints de relatórios */
+.report-image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: #f0f7ff;
+}
+
+.report-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.report-image:hover {
+    transform: scale(1.02);
+}
+
+.report-image-placeholder {
+    width: 100%;
+    min-height: 400px;
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a8fe3;
+    font-size: 14px;
+    border: 2px dashed #c0d6f0;
+}
+
+.service-details {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.service-details-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0f4c81;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e7ff;
+}
+
+.service-image-description {
+    background-color: #f8faff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 4px solid #1a8fe3;
+}
+
+/* Estilo para destacar recursos de IA */
+.ai-feature {
+    background-color: #f0f8ff;
+    border-left: 4px solid #1a8fe3;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+.ai-badge {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Estilos para o badge de NOVO */
+.new-badge {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff3366 100%);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-left: 8px;
+    animation: pulse-red 2s infinite;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 51, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 51, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 51, 102, 0);
+    }
+}
+
+/* Estilo para o container de lançamento */
+.launch-container {
+    border: 2px dashed #ff3366;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgba(255, 51, 102, 0.05);
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.launch-badge {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff3366 100%);
+    color: white;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(255, 51, 102, 0.3);
+}
+
+.launch-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff3366;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.launch-description {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Efeito de destaque para o lançamento */
+.highlight-glow {
+    box-shadow: 0 0 20px rgba(255, 51, 102, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.highlight-glow:hover {
+    box-shadow: 0 0 30px rgba(255, 51, 102, 0.4);
+}
