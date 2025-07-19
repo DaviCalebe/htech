@@ -68,7 +68,6 @@ body {
 
 .logo {
     width: auto;
-    height: 7rem;
 }
 
 /* Estilo para o espaço reservado da logo - SEM FUNDO AZUL */
@@ -369,4 +368,43 @@ body {
 
 .highlight-glow:hover {
     box-shadow: 0 0 30px rgba(255, 51, 102, 0.4);
+}
+
+@keyframes cloudMoveLeft {
+  0%, 100% {
+    transform: translateX(-5rem);
+  }
+  50% {
+    transform: translateX(-3rem);
+  }
+}
+
+@keyframes cloudMoveRight {
+  0%, 100% {
+    transform: translateX(5rem);
+  }
+  50% {
+    transform: translateX(3rem);
+  }
+}
+
+.animate-cloud-left {
+  animation: cloudMoveLeft 8s ease-in-out infinite;
+}
+
+.animate-cloud-right {
+  animation: cloudMoveRight 8s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.animate-float {
+  animation: floatY 4s ease-in-out infinite;
 }

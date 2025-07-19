@@ -15,11 +15,11 @@
         href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes."
         target="_blank" class="whatsapp-button pulse" aria-label="Contato via WhatsApp"> <i class="fab fa-whatsapp"></i>
     </a>
-    <header class="fixed w-full bg-white shadow-md z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="logo-container">
-                    <img src="./assets/logo-htech.png" alt="Logo" class="logo">
+        <header class="fixed w-full h-[6rem] bg-white shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center h-full">
+            <div class="flex items-center h-full">
+                <div class="logo-container h-full">
+                    <img src="./assets/logo-htech.png" alt="Logo" class="logo h-full">
                 </div>
             </div>
             <nav class="hidden md:flex space-x-8"> <a href="#home"
@@ -49,12 +49,12 @@
                     class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contato</a> </div>
         </div>
     </header>
-    <section id="home" class="relative gradient-bg pt-28 pb-20 md:pt-[15rem] md:pb-32">
-        <div class="hero-bg-image">
-            <img
-            src="./assets/background.webp" alt="Background"
-            style="width:100%; height:100%; object-fit:cover;"
-            >
+    <section
+    id="home"
+    class="relative gradient-bg pt-28 pb-20 md:pt-[16rem] md:pb-32 bg-[url('./assets/background.webp')] bg-cover bg-[center_top_60px]"
+    >
+    <div class="absolute inset-0 bg-black/35 z-0"></div>
+
         </div>
         <div class="container mx-auto px-4 hero-content">
             <div class="flex flex-col items-center text-center">
@@ -71,7 +71,126 @@
                         <i class="fab fa-whatsapp mr-2 text-xl"></i> Fale Conosco </a> </div>
             </div>
         </div>
-    </section> <!-- Quem Somos Section -->
+    </section>
+    <section class="py-20">
+                    <!-- <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas em comunicação empresarial
+                    baseadas em nuvem, com foco em PABX em nuvem e gerenciamento de conversas inteligentes.</p>
+            </div> -->
+        <div class="grid grid-cols-2 p-6">
+<!--             <div class="flex flex-col justify-center items-center">
+                <h3 class="text-5xl font-bold text-blue-900 mb-3">PABX em Nuvem</h3>
+                <div class="w-80 h-80 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-cloud text-9xl"></i>
+                    <i
+                        class="fas fa-phone-alt text-9xl text-blue-600 feature-icon"></i> </div>
+
+            </div>
+             -->
+
+             <div class="flex flex-col justify-center items-center">
+                <h3 class="text-5xl font-bold text-gray-800 mb-3">PABX em Nuvem</h3>
+<div class="relative w-80 h-80 flex items-center justify-center mb-6">
+  <!-- Nuvem cinza ao fundo, indo para a direita -->
+  <i class="fa-solid fa-cloud text-[18rem] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
+
+  <!-- Nuvem azul por cima, indo para a esquerda -->
+  <i class="fa-solid fa-cloud text-[18rem] text-blue-600 feature-icon relative z-10 animate-cloud-left"></i>
+
+    <img src="./assets/icon-pabx.png" alt="Imagem sobre nuvens"
+       class="absolute z-20 w-80 h-80 object-contain animate-float" />
+</div>
+
+
+
+            </div>
+            <div class="flex flex-col justify-center items-center p-7">
+  <div class="w-[25rem]">
+    <p class="text-gray-600 text-xl mb-6 text-right">
+      Sistema telefônico completo hospedado na nuvem, eliminando a necessidade de equipamentos físicos e reduzindo custos operacionais.
+    </p>
+</div>
+<div class="grid gap-6 justify-end text-right w-[25rem]">
+    <ul class="space-y-2 mb-6 text-lg">
+        <li class="flex items-center justify-end"> 
+            <span class="text-gray-700">Atendimento automático</span> 
+            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+        </li>
+        <li class="flex items-center justify-end">
+            <span class="text-gray-700">Filas de atendimento</span> 
+            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+        </li>
+        <li class="flex items-center justify-end"> 
+            <span class="text-gray-700">Gravação de chamadas</span> 
+            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+        </li>
+        <li class="flex items-center justify-end"> 
+            <span class="text-gray-700">Relatórios detalhados</span> 
+            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+        </li>
+        <li class="flex items-center justify-end"> 
+            <span class="text-gray-700">Portabilidade numérica</span> 
+            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+        </li>
+        <li class="flex items-center justify-end"> 
+            <span class="new-badge mr-2">Novo</span> 
+            <span class="text-gray-700">Análise de sentimento com IA</span> 
+            <i class="fas fa-check-circle text-green-500 ml-2"></i>
+        </li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+        
+
+        <div class="grid grid-cols-2 p-6">
+            <div class="flex flex-col justify-center items-center p-7">
+
+                <div class="w-[25rem]">
+
+                    <p class="text-gray-600 text-xl mb-6"> Automatize o atendimento ao cliente com gerenciamento de
+                        conversas inteligente que utiliza IA para compreender e responder às necessidades dos seus
+                        clientes. </p>
+                </div>
+                <div class="grid gap-6 w-[25rem]">
+                    <ul class="space-y-2 mb-6 text-lg">
+                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
+                                    class="text-gray-700">Integração com WhatsApp</span> </li>
+                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
+                                    class="text-gray-700">Processamento de linguagem natural</span> </li>
+                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
+                                    class="text-gray-700">Personalização completa</span> </li>
+                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
+                                    class="text-gray-700">Análise de sentimentos</span> </li>
+                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
+                                    class="text-gray-700">Agentes de IA</span> <span class="new-badge">Novo</span> </li>
+                        </ul>
+
+
+                </div>
+            </div>
+
+            <!--             <div class="flex flex-col justify-center items-center">
+                <h3 class="text-5xl font-bold text-blue-900 mb-3">PABX em Nuvem</h3>
+                <div class="w-80 h-80 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-cloud text-9xl"></i>
+                    <i
+                        class="fas fa-phone-alt text-9xl text-blue-600 feature-icon"></i> </div>
+
+            </div>
+             -->
+
+             <div class="flex flex-col justify-center items-center text-center">
+                <h3 class="text-4xl font-bold text-gray-800 mb-3">Gerenciamento de conversas Inteligente</h3>
+                        <div class="w-80 h-80 bg-blue-100 rounded-lg flex items-center justify-center mb-6"> <i
+                                class="fas fa-robot text-9xl text-blue-600 feature-icon"></i> </div>
+
+            </div>
+        </div>
+    </section>
     <section id="quem-somos" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -118,69 +237,8 @@
     </section> <!-- Serviços Section -->
     <section id="servicos" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas em comunicação empresarial
-                    baseadas em nuvem, com foco em PABX em nuvem e gerenciamento de conversas inteligentes.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- PABX em Nuvem -->
-                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="p-6">
-                        <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6"> <i
-                                class="fas fa-phone-alt text-3xl text-blue-600 feature-icon"></i> </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">PABX em Nuvem</h3>
-                        <p class="text-gray-600 mb-6"> Sistema telefônico completo hospedado na nuvem, eliminando a
-                            necessidade de equipamentos físicos e reduzindo custos operacionais. </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Atendimento automático</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Filas de atendimento</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Gravação de chamadas</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Relatórios detalhados</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Portabilidade numérica</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Análise de sentimento com IA</span> <span
-                                    class="new-badge">Novo</span> </li>
-                        </ul> <a
-                            href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes."
-                            target="_blank"
-                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
-                            Saiba Mais </a>
-                    </div>
-                </div> <!-- Gerenciamento de conversas Inteligente -->
-                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
-                    <div class="p-6">
-                        <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6"> <i
-                                class="fas fa-robot text-3xl text-blue-600 feature-icon"></i> </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-3">Gerenciamento de conversas Inteligente</h3>
-                        <p class="text-gray-600 mb-6"> Automatize o atendimento ao cliente com gerenciamento de
-                            conversas inteligente que utiliza IA para compreender e responder às necessidades dos seus
-                            clientes. </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Integração com WhatsApp</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Processamento de linguagem natural</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Personalização completa</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Análise de sentimentos</span> </li>
-                            <li class="flex items-center"> <i class="fas fa-check-circle text-green-500 mr-2"></i> <span
-                                    class="text-gray-700">Agentes de IA</span> <span class="new-badge">Novo</span> </li>
-                        </ul> <a
-                            href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes."
-                            target="_blank"
-                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
-                            Saiba Mais </a>
-                    </div>
-                </div>
-            </div> <!-- Detalhes do PABX em Nuvem com imagens -->
+
+            <!-- Detalhes do PABX em Nuvem com imagens -->
             <div class="service-details max-w-5xl mx-auto">
                 <h3 class="service-details-title">PABX em Nuvem - Detalhes</h3> <!-- Imagem 1 -->
                 <div class="mb-12">
