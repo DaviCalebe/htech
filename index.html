@@ -19,7 +19,7 @@
         <div class="container mx-auto flex justify-between items-center h-full">
             <div class="flex items-center h-full">
                 <div class="logo-container h-full">
-                    <img src="./assets/logo-htech.png" alt="Logo" class="logo h-full">
+                    <img src="./assets/logo-htech.png" alt="Logo" class="logo h-[80%]">
                 </div>
             </div>
             <nav class="hidden md:flex space-x-8"> <a href="#home"
@@ -402,7 +402,7 @@
                 <i class="fab fa-whatsapp mr-2 text-green-500 text-2xl"></i> Solicite uma demonstração </a>
         </div>
     </section>
-        <section id="quem-somos" class="py-20 bg-white">
+        <section id="quem-somos" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Quem Somos</h2>
@@ -446,8 +446,9 @@
             </div>
         </div>
     </section>
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
+    <footer id="contato">
+
+        <div class="container mx-auto p-4 bg-gray-50">
             <div class="text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
@@ -456,8 +457,10 @@
             </div>
 
         </div>
-    </section> <!-- Footer -->
-    <footer id="contato" class="footer-gradient text-white pt-16 pb-8 relative">
+        <div class="footer-gradient text-white pt-16 pb-8 relative">
+
+
+
         <!-- Padrão de fundo para o rodapé -->
         <div class="footer-pattern"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                 viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
@@ -469,41 +472,52 @@
                 <rect width="100%" height="100%" fill="url(#footer-grid)" />
             </svg> </div>
         <div class="container mx-auto px-4 footer-content">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
                 <div>
                     <div class="flex items-center mb-4">
-                        <!-- <div class="footer-logo-placeholder" id="footer-logo"></div> --> <img
-                            src="./assets/logo-htech.png" alt="Logo" class="footer-logo"> </div>
+                        <img src="./assets/logo-htech.png" alt="Logo" class="footer-logo">
+                    </div>
                     <p class="text-blue-100 mb-6"> Transformando a comunicação empresarial com soluções inovadoras. </p>
                                     <p class="text-blue-100 mb-6">Estamos prontos para ajudar sua empresa a implementar as
                     melhores soluções em comunicação.</p>
                     <p class="text-blue-100 mb-6"> CNPJ: 50.626.675/0001-19 </p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Contato</h3>
+                    <h3 class="text-xl text-blue-100 font-medium mb-4">Contato</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div class="bg-blue-100 p-4 rounded-full mb-4"> <i
-                                    class="fas fa-phone text-2xl text-blue-600"></i> </div>
-                            <h4 class="font-bold text-gray-800 mb-2">Telefone</h4>
-                            <p class="text-gray-600">(81) 2011-6700</p>
+                        <!-- Card Telefone -->
+                        <div class="flex flex-col items-center text-center p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                          <div class="bg-blue-500 p-4 rounded-full mb-4">
+                            <i class="fas fa-phone text-2xl text-white"></i>
+                          </div>
+                          <h4 class="font-bold text-white mb-2">Telefone</h4>
+                          <p class="text-blue-200">(81) 2011-6700</p>
                         </div>
-                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div class="bg-blue-100 p-4 rounded-full mb-4"> <i
-                                    class="fas fa-envelope text-2xl text-blue-600"></i> </div>
-                            <h4 class="font-bold text-gray-800 mb-2">Email</h4>
-                            <p class="text-gray-600">contato@htech-solucoes.com</p>
+                      
+                        <!-- Card Email -->
+                        <div class="flex flex-col items-center text-center p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                          <div class="bg-blue-500 p-4 rounded-full mb-4">
+                            <i class="fas fa-envelope text-2xl text-white"></i>
+                          </div>
+                          <h4 class="font-bold text-white mb-2">Email</h4>
+                          <p class="text-blue-200">contato@htech-solucoes.com</p>
                         </div>
-                        <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm">
-                            <div class="bg-blue-100 p-4 rounded-full mb-4"> <i
-                                    class="fab fa-whatsapp text-2xl text-blue-600"></i> </div>
-                            <h4 class="font-bold text-gray-800 mb-2">WhatsApp</h4> <a
-                                href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes."
-                                target="_blank"
-                                class="text-gray-600 hover:text-gray-700 transition duration-300 font-medium">Clique
-                                para conversar</a>
+                      
+                        <!-- Card WhatsApp -->
+                        <div class="flex flex-col items-center text-center p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                          <div class="bg-blue-500 p-4 rounded-full mb-4">
+                            <i class="fab fa-whatsapp text-2xl text-white"></i>
+                          </div>
+                          <h4 class="font-bold text-white mb-2">WhatsApp</h4>
+                          <a
+                            href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes."
+                            target="_blank"
+                            class="text-blue-200 hover:text-white transition duration-300 font-medium">
+                            Clique para conversar
+                          </a>
                         </div>
-                    </div>
+                      </div>
+                      
                 </div>
             </div>
             <div class="border-t border-blue-800 pt-8">
@@ -516,6 +530,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </footer>
     <script src="script.js"></script>
 </body>

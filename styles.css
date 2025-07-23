@@ -6,7 +6,7 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #0f4c81 0%, #1a8fe3 100%);
+    background: linear-gradient(135deg, #4B5563 0%, #2563EB 100%);
     position: relative;
     overflow: hidden;
 }
@@ -83,7 +83,7 @@ body {
 }
 
 .footer-logo {
-    height: 40px;
+    height: 5rem;
     width: auto;
 }
 
@@ -195,7 +195,7 @@ body {
 
 /* Estilo para o rodapé com gradiente */
 .footer-gradient {
-    background: linear-gradient(135deg, #0f4c81 0%, #1a8fe3 100%);
+    background: linear-gradient(135deg, #2563EB 0%, #006cb9 100%);
     position: relative;
 }
 
