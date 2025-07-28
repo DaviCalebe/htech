@@ -372,19 +372,19 @@ body {
 
 @keyframes cloudMoveLeft {
   0%, 100% {
-    transform: translateX(-5rem);
+    transform: translateX(var(--cloud-move-left, -3rem));
   }
   50% {
-    transform: translateX(-3rem);
+    transform: translateX(var(--cloud-mid-left, -2rem));
   }
 }
 
 @keyframes cloudMoveRight {
   0%, 100% {
-    transform: translateX(5rem);
+    transform: translateX(var(--cloud-move-right, 3rem));
   }
   50% {
-    transform: translateX(3rem);
+    transform: translateX(var(--cloud-mid-right, 2rem));
   }
 }
 
@@ -407,4 +407,13 @@ body {
 
 .animate-float {
   animation: floatY 4s ease-in-out infinite;
+}
+
+@keyframes fade-black {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.animate-fade-black {
+  animation: fade-black 5s ease-in-out infinite;
 }

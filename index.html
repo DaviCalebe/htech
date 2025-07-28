@@ -53,7 +53,7 @@
     id="home"
     class="relative gradient-bg pt-28 pb-20 md:pt-[16rem] md:pb-32 bg-[url('./assets/background.webp')] bg-cover bg-[center_top_60px]"
     >
-    <div class="absolute inset-0 bg-black/35 z-0"></div>
+    <div class="absolute inset-0 bg-black/35 z-0 animate-fade-black"></div>
 
         </div>
         <div class="container mx-auto px-4 hero-content">
@@ -73,30 +73,36 @@
         </div>
     </section>
     <section class="bg-gray-50">
-        <div class="grid grid-cols-1 lg:grid-cols-2 p-6">
-             <div class="flex flex-col justify-center items-center">
-                <h3 class="text-5xl font-bold text-gray-800 mb-3">PABX em Nuvem</h3>
-<div class="relative w-80 h-80 flex items-center justify-center mb-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 sm:p-6">
+             <div class="flex flex-col justify-center items-center text-center">
+                <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">PABX em Nuvem</h3>
+<div class="relative w-80 h-60 sm:h-80 flex items-center justify-center sm:mb-6">
   <!-- Nuvem cinza ao fundo, indo para a direita -->
-  <i class="fa-solid fa-cloud text-[18rem] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
+  <!-- Nuvem cinza indo pra direita -->
+<i class="fa-solid fa-cloud text-[10rem] sm:text-[18rem] text-gray-400 feature-icon absolute z-0 animate-cloud-right"
+   style="--cloud-move-right: 3rem; --cloud-mid-right: 2rem;"
+   sm:style="--cloud-move-right: 5rem; --cloud-mid-right: 3rem;"></i>
 
-  <!-- Nuvem azul por cima, indo para a esquerda -->
-  <i class="fa-solid fa-cloud text-[18rem] text-blue-600 feature-icon relative z-10 animate-cloud-left"></i>
+<!-- Nuvem azul indo pra esquerda -->
+<i class="fa-solid fa-cloud text-[10rem] sm:text-[18rem] text-blue-600 feature-icon relative z-10 animate-cloud-left"
+   style="--cloud-move-left: -3rem; --cloud-mid-left: -2rem;"
+   sm:style="--cloud-move-left: -5rem; --cloud-mid-left: -3rem;"></i>
+
 
     <img src="./assets/pabx-icon.png" alt="Imagem sobre nuvens"
-       class="absolute z-20 w-80 h-80 object-contain animate-float" />
+       class="absolute z-20 w-[12rem] h-[12rem] sm:w-80 sm:h-80 object-contain animate-float" />
 </div>
 
 
 
             </div>
-            <div class="flex flex-col justify-center items-center p-7">
+            <div class="flex flex-col justify-center items-center sm:p-7">
   <div class="w-[25rem]">
-    <p class="text-gray-600 text-xl mb-6 text-right">
+    <p class="text-gray-600 text-xl mb-6 text-center md:text-right">
       Sistema telefônico completo hospedado na nuvem, eliminando a necessidade de equipamentos físicos e reduzindo custos operacionais.
     </p>
 </div>
-<div class="grid gap-6 justify-end text-right w-[25rem]">
+<div class="grid gap-6 justify-center md:justify-end text-right w-[25rem]">
     <ul class="space-y-2 mb-6 text-lg">
       <li class="flex items-center justify-end">
         <span class="text-gray-700 hover:pr-2 transition-all duration-300">Atendimento automático</span>
@@ -131,18 +137,18 @@
         </div>
         
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 p-6">
-            <div class="flex flex-col justify-center items-center p-7 order-2 lg:order-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 sm:p-6">
+            <div class="flex flex-col justify-center items-center sm:p-7 order-2 md:order-1">
 
                 <div class="w-[25rem]">
 
-                    <p class="text-gray-600 text-xl mb-6"> Automatize o atendimento ao cliente com gerenciamento de
+                    <p class="text-gray-600 text-xl mb-6 text-center md:text-left"> Automatize o atendimento ao cliente com gerenciamento de
                         conversas inteligente que utiliza IA para compreender e responder às necessidades dos seus
                         clientes. </p>
                 </div>
-                <div class="grid gap-6 w-[25rem]">
+                <div class="grid gap-6 justify-center md:justify-start text-left w-[25rem]">
                     <ul class="space-y-2 mb-6 text-lg">
-                      <li class="flex items-center">
+                      <li class="flex items-center justify-start">
                         <i class="fas fa-check-circle text-green-500 mr-2"></i>
                         <span class="text-gray-700 hover:pl-2 transition-all duration-300">Integração com WhatsApp</span>
                       </li>
@@ -167,16 +173,16 @@
                   </div>
                   
             </div>
-             <div class="flex flex-col justify-center items-center text-center order-1 lg:order-2">
-                <h3 class="text-4xl font-bold text-gray-800 mb-3">Gerenciamento de conversas Inteligente</h3>
-                        <div class="w-80 h-80 flex items-center justify-center mb-6">
-                            <img src="./assets/chatbot.png" alt="chatbot" class="animate-float">
+             <div class="flex flex-col justify-center items-center text-center order-1 md:order-2">
+                <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">Gerenciamento de conversas Inteligente</h3>
+                        <div class="w-80 h-60 sm:h-80 flex items-center justify-center sm:mb-6">
+                            <img src="./assets/chatbot.png" alt="chatbot" class="animate-float w-[12rem] h-[12rem] sm:w-80 sm:h-80">
                         </div>
 
             </div>
         </div>
     </section>
-    <section id="servicos" class="py-20 md:py-5 bg-gray-50">
+    <section id="servicos" class="py-5 md:py-20 bg-gray-50">
         <div class="container mx-auto px-4">
                         <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
@@ -445,7 +451,7 @@
             </div>
 
         </div>
-        <div class="footer-gradient text-white pt-16 pb-8 relative">
+        <div class="footer-gradient text-white pt-4 pb-8 relative">
 
 
 
