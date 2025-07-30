@@ -40,3 +40,15 @@ newBadges.forEach(badge => {
     badge.classList.add('pulse');
 });
 });
+
+/* AQUI É A GALERIA DE IMAGENS */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#servicos .report-image-container', // todos os containers
+    children: 'a',
+    pswpModule: PhotoSwipe
+  });
+
+  lightbox.init();
+});

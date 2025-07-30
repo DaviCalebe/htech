@@ -8,6 +8,7 @@
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
   <link href="./styles.css" rel="stylesheet"/>
  </head>
@@ -247,7 +248,9 @@
       <!-- SUBSTITUA ESTE BLOCO PELA SUA IMAGEM -->
       <!-- <div class="report-image-container" id="pabx-image-1"> <div class="report-image-placeholder"> <div class="text-center p-4"> <i class="fas fa-chart-line text-5xl mb-4"></i> <p>Adicione uma imagem do painel de controle do PABX aqui</p> <p class="text-xs mt-2">(Tamanho recomendado: 1200x800px)</p> </div> </div> </div> -->
       <div class="report-image-container">
-       <img alt="Painel de Controle PABX" class="report-image" src="./assets/relatorios-detalhados-pabx.png"/>
+        <a href="./assets/relatorios-detalhados-pabx.png" data-pswp-width="1200" data-pswp-height="800">
+            <img alt="Painel de Controle PABX" class="report-image" src="./assets/relatorios-detalhados-pabx.png"/>
+        </a>
       </div>
       <div class="service-image-description">
        <h4 class="font-bold text-lg mb-2">
@@ -265,7 +268,11 @@
       <!-- SUBSTITUA ESTE BLOCO PELA SUA IMAGEM -->
       <!-- <div class="report-image-container" id="pabx-image-2"> <div class="report-image-placeholder"> <div class="text-center p-4"> <i class="fas fa-chart-bar text-5xl mb-4"></i> <p>Adicione uma imagem dos relatórios de chamadas aqui</p> <p class="text-xs mt-2">(Tamanho recomendado: 1200x800px)</p> </div> </div> </div> -->
       <div class="report-image-container">
-       <img alt="Relatórios de Chamadas" class="report-image" src="./assets/painel-controle-pabx.png"/>
+                <a href="./assets/painel-controle-pabx.png" data-pswp-width="1200" data-pswp-height="800">
+                    <img alt="Relatórios de Chamadas" class="report-image" src="./assets/painel-controle-pabx.png"/>
+                </a>
+
+
       </div>
       <div class="service-image-description">
        <h4 class="font-bold text-lg mb-2">
@@ -378,7 +385,7 @@
       <!-- SUBSTITUA ESTE BLOCO PELA SUA IMAGEM -->
       <!-- <div class="report-image-container" id="chat-image-1"> <div class="report-image-placeholder"> <div class="text-center p-4"> <i class="fas fa-comments text-5xl mb-4"></i> <p>Adicione uma imagem da interface de chat aqui</p> <p class="text-xs mt-2">(Tamanho recomendado: 1200x800px)</p> </div> </div> </div> -->
       <div class="report-image-container">
-       <img alt="Interface de Chat" class="report-image" src="./assets/interface-de-atendimento.png"/>
+       <img alt="Interface de Chat" class="report-image" src="./assets/interface-de-atendimento.JPG"/>
       </div>
       <div class="service-image-description">
        <h4 class="font-bold text-lg mb-2">
@@ -773,7 +780,26 @@
     </div>
    </div>
   </footer>
-  <script src="script.js">
-  </script>
+
+
+<!-- Inclua no fim do body -->
+<!-- CSS da galeria já está certo no <head> -->
+<script src="https://unpkg.com/photoswipe@5/dist/photoswipe.umd.min.js"></script>
+<script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#servicos', // onde está toda a galeria
+      children: '.report-image-container a', // pega os <a> dentro do container
+      pswpModule: PhotoSwipe
+    });
+
+    lightbox.init();
+  });
+</script>
+
+<!-- Container do PhotoSwipe (obrigatório no v5) -->
+<div class="pswp" id="pswp"></div>
+
  </body>
 </html>
