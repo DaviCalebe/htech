@@ -217,11 +217,9 @@ body {
 
 /* Estilos para as imagens de prints de relatórios */
 .report-image-container {
-    width: 100%;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
     background-color: #f0f7ff;
 }
 
@@ -267,7 +265,6 @@ body {
     background-color: #f8faff;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 15px;
     border-left: 4px solid #1a8fe3;
 }
 
@@ -362,7 +359,7 @@ body {
 
 /* Efeito de destaque para o lançamento */
 .highlight-glow {
-    box-shadow: 0 0 20px rgba(255, 51, 102, 0.2);
+    box-shadow: 0 0 20px rgb(245 245 245);
     transition: box-shadow 0.3s ease;
 }
 
