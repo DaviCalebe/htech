@@ -11,6 +11,27 @@ body {
     overflow: hidden;
 }
 
+.decorated-circle::before {
+    content: '';
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    border: 2px dotted #3b82f6; /* azul Tailwind (blue-500) */
+    border-radius: 9999px;
+    animation: rotate 8s linear infinite;
+    top: -20%;
+    left: -20%;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 #home {
     clip-path: polygon(100% 0, 100% 100%, 50% 93%, 0 100%, 0 0);
 }
