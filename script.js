@@ -95,3 +95,9 @@ function resetAutoSlide() {
   }, 5000);
 }
 
+const icons = document.querySelectorAll('.banner-slide i');
+
+icons.forEach(icon => {
+  const randomDuration = (Math.random() * (10 - 2) + 2).toFixed(2); // Random value between 2s and 10s
+  icon.style.animationDuration = `${randomDuration}s`; // Apply random duration to the icon
+});
