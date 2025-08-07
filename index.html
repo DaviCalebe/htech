@@ -9,8 +9,9 @@
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link rel="stylesheet" href="https://unpkg.com/basiclightbox/dist/basicLightbox.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-  <link href="./styles.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+  <link rel="stylesheet" href="./styles.css"/>
  </head>
  <body class="bg-gray-50">
   <a aria-label="Contato via WhatsApp" class="whatsapp-button pulse" href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes." target="_blank">
@@ -66,16 +67,17 @@
     </div>
    </div>
   </header>
+
 <section class="relative bg-gray-50 overflow-hidden" id="home">
   <!-- Setas de navegação -->
   <div class="arrow left absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-800 text-3xl cursor-pointer z-10">&lt;</div>
   <div class="arrow right absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-800 text-3xl cursor-pointer z-10">&gt;</div>
 
   <!-- Container do carrossel -->
-  <div class="banner-content flex transition-transform duration-500 w-full h-[30rem] mt-[6rem]">
+  <div class="banner-content flex transition-transform duration-500 w-full h-[32rem] mt-[6rem]">
 
     <!-- Slide 1: hero original -->
-     <div class="banner-slide min-w-full bg-blue-300 flex items-center justify-center">
+<!--      <div class="banner-slide min-w-full bg-blue-300 flex items-center justify-center">
       <div class="container mx-auto px-4 flex flex-col items-center text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4 max-w-3xl">
           Comunicação empresarial moderna e eficiente
@@ -93,39 +95,101 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Slide 2: Plataforma Multicanal -->
-    <div class="banner-slide min-w-full bg-blue-300 px-4">
+    <div class="banner-slide min-w-full h-full bg-gray-600 px-4">
 <!--       <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-8">
         Plataforma de Atendimento Multicanal
       </h3> -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:p-6">
-        <!-- Texto à esquerda -->
-        <div class="flex flex-col justify-center items-center sm:p-7 order-2 md:order-1">
-          <div class="w-[25rem] max-w-full">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:p-6">
+        <h2 class="text-7xl uppercase font-bold break-words text-center text-blue-500 mb-10">
+          Plataforma de Atendimento Multicanal
+        </h2>
+        <div class="flex flex-col justify-center items-center order-2 md:order-1">
+<!--           <div class="w-[25rem] max-w-full">
             <p class="text-gray-600 text-xl mb-6 px-4 md:px-0 text-center md:text-left">
               Automatize o atendimento ao cliente com gerenciamento de conversas inteligente que utiliza IA para compreender e responder às necessidades dos seus clientes.
             </p>
-          </div>
-          <ul class="space-y-2 mb-6 text-lg text-left w-[25rem] max-w-full">
-            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span class="text-gray-700">Integração com WhatsApp</span></li>
-            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span class="text-gray-700">Processamento de linguagem natural</span></li>
-            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span class="text-gray-700">Personalização completa</span></li>
-            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span class="text-gray-700">Análise de sentimentos</span></li>
-            <li class="flex items-center">
-              <i class="fas fa-check-circle text-green-500 mr-2"></i>
-              <span class="text-gray-700">Agentes de IA</span>
-              <span class="new-badge ml-2">Novo</span>
-            </li>
-          </ul>
-        </div>
-        <!-- Imagem à direita -->
-        <div class="flex flex-col justify-center items-center text-center order-1 md:order-2">
-          <div class="relative w-[25rem] h-[25rem] bg-white rounded-full border-4 border-blue-600 flex justify-center items-center">
-            <img src="./assets/chatbot.png" alt="chatbot" class="animate-float w-[12rem] h-[12rem] sm:w-80 sm:h-80" />
+          </div> -->
+          <div class="animate-float relative">
+            <div class="flex flex-row gap-4 absolute z-10 bg-blue-600 text-white text-4xl rounded-xl p-3 bottom-2 right-[50%] translate-x-[50%]">
+              <i class="fi fi-brands-whatsapp"></i>
+              <i class="fi fi-brands-instagram"></i>
+              <i class="fi fi-brands-facebook"></i>
+              <i class="fi fi-brands-telegram"></i>
+            </div>
+            <img src="./assets/chatbot.png" alt="chatbot" class="w-[12rem] h-[12rem] sm:w-80 sm:h-80"/>
           </div>
         </div>
+        <div class="flex flex-col items-center">
+        
+          <div class="relative flex flex-col gap-6">
+            <!-- Linha vertical -->
+            <div class="absolute left-6 top-0 bottom-0 w-1 bg-blue-300 rounded-full z-0"></div>
+        
+            <!-- Passo 1 -->
+            <div class="flex items-center gap-6 relative z-10">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">
+                  01
+                </div>
+              </div>
+              <div class="bg-blue-100 p-4 rounded-lg shadow-sm w-[250px]">
+                <h3 class="font-semibold text-blue-600">Integração com WhatsApp</h3>
+              </div>
+            </div>
+        
+            <!-- Passo 2 -->
+            <div class="flex items-center gap-6 relative z-10">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">
+                  02
+                </div>
+              </div>
+              <div class="bg-blue-100 p-4 rounded-lg shadow-sm w-[250px]">
+                <h3 class="font-semibold text-blue-600">Processamento de linguagem natural</h3>
+              </div>
+            </div>
+        
+            <!-- Passo 3 -->
+            <div class="flex items-center gap-6 relative z-10">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">
+                  03
+                </div>
+              </div>
+              <div class="bg-blue-100 p-4 rounded-lg shadow-sm w-[250px]">
+                <h3 class="font-semibold text-blue-600">Personalização completa</h3>
+              </div>
+            </div>
+        
+            <!-- Passo 4 -->
+            <div class="flex items-center gap-6 relative z-10">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">
+                  04
+                </div>
+              </div>
+              <div class="bg-blue-100 p-4 rounded-lg shadow-sm w-[250px]">
+                <h3 class="font-semibold text-blue-600">Análise de sentimentos</h3>
+              </div>
+            </div>
+        
+            <!-- Passo 5 -->
+            <div class="flex items-center gap-6 relative z-10">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold">
+                  05
+                </div>
+              </div>
+              <div class="bg-blue-100 p-4 rounded-lg shadow-sm w-[250px]">
+                <h3 class="font-semibold text-blue-600">Agentes de IA</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
     </div>
 
