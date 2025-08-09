@@ -95,3 +95,24 @@ function resetAutoSlide() {
   }, 5000);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const offsetX = -25; // deslocamento horizontal
+  const offsetY = -35; // deslocamento vertical
+
+  const polyline = document.querySelector("svg polyline");
+  if (!polyline) return;
+
+  const points = polyline.getAttribute("points")
+    .trim()
+    .split(/\s+/)
+    .map(p => p.split(",").map(Number));
+
+  points.forEach((point, index) => {
+    const step = document.querySelector(`#step${index + 1}`);
+    if (step) {
+      const [x, y] = point;
+      step.style.left = `${x + offsetX}px`;
+      step.style.top = `${y + offsetY}px`;
+    }
+  });
+});
