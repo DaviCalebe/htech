@@ -102,6 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const polyline = document.querySelector("svg polyline");
   if (!polyline) return;
 
+  const svg = polyline.ownerSVGElement;
+  const [minX, minY] = svg.getAttribute("viewBox").split(" ").map(Number);
+
   const points = polyline.getAttribute("points")
     .trim()
     .split(/\s+/)
@@ -111,8 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const step = document.querySelector(`#step${index + 1}`);
     if (step) {
       const [x, y] = point;
-      step.style.left = `${x + offsetX}px`;
-      step.style.top = `${y + offsetY}px`;
+      // Corrige posição com base no deslocamento do viewBox
+      step.style.left = `${(x - minX) + offsetX}px`;
+      step.style.top = `${(y - minY) + offsetY}px`;
     }
   });
 });
