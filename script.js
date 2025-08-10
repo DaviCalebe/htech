@@ -22,11 +22,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetId = this.getAttribute('href');
     const targetElement = document.querySelector(targetId);
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: 'smooth'
-      });
+      if (targetElement) {
+        // offset padrão
+        let offset = 80;
+
+        // exceções para IDs específicos
+        if (targetId === "#service-details-1" || targetId === "#service-details-2") {
+          offset = 110; // valor diferente
+        }
+
+        window.scrollTo({
+          top: targetElement.offsetTop - offset,
+          behavior: 'smooth'
+        });
     }
   });
 });
