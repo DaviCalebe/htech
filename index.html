@@ -97,6 +97,8 @@
       </div>
     </div> -->
 
+
+
     <div class="banner-slide min-w-full h-full px-4">
 
       <div class="grid grid-cols-1 md:grid-cols-[auto_auto] gap-[15rem] w-full h-full sm:p-6">
@@ -200,41 +202,95 @@
     </div>
 
         <!-- Slide 3: PABX em Nuvem -->
-    <div class="banner-slide min-w-full bg-blue-300 px-4">
-<!--       <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-8">
-        PABX em Nuvem
-      </h3> -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:p-6">
-        <!-- Lado esquerdo -->
-        <div class="flex flex-col justify-center items-center text-center">
-          <div class="relative w-80 h-60 sm:h-80 flex items-center justify-center sm:mb-6">
-            <i class="fa-solid fa-cloud text-[10rem] sm:text-[18rem] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
-            <i class="fa-solid fa-cloud text-[10rem] sm:text-[18rem] text-blue-600 feature-icon relative z-10 animate-cloud-left"></i>
-            <img src="./assets/pabx-icon.png" alt="Imagem sobre nuvens" class="absolute z-20 w-[12rem] h-[12rem] sm:w-80 sm:h-80 object-contain animate-float" />
+    <div class="banner-slide min-w-full h-full px-4">
+
+  <div class="grid grid-cols-1 md:grid-cols-[auto_auto] gap-[15rem] w-full h-full sm:p-6">
+    <div class="grid grid-cols-[200px_1fr] items-center px-10">
+      <div class="flex justify-center items-center w-full h-full">
+        <div class="relative flex justify-center items-center w-full h-full">
+          <i class="fa-solid fa-cloud text-[10rem] sm:text-[200px] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
+          <i class="fa-solid fa-cloud text-[10rem] sm:text-[200px] text-blue-600 feature-icon absolute z-10 animate-cloud-left"></i>
+          <img src="./assets/pabx-icon.png" alt="pabx em nuvem" class="w-[200px] absolute z-20 animate-float" />
+        </div>
+      </div>
+
+      <div class="relative">
+
+        <!-- SVG ocupando todo o container -->
+        <svg viewBox="95 45 100 410" width="100" height="410" preserveAspectRatio="xMidYMid meet">  
+          <polyline points="100,50 171,130 190,247 171,352 100,444"  
+            fill="none" stroke="rgb(147,197,253)" stroke-width="4" />  
+        </svg>  
+
+        <!-- Passo 1 -->
+        <div id="step1-2" class="absolute flex items-center gap-2 z-30" style="left: 0; top: 0;">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">01</div>
+          </div>
+          <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+            <h3 class="font-semibold text-gray-600">Atendimento automático</h3>
           </div>
         </div>
-        <!-- Lado direito -->
-        <div class="flex flex-col justify-center items-center sm:p-7">
-          <div class="w-[25rem] max-w-full">
-            <p class="text-gray-600 text-xl mb-6 px-4 md:px-0 text-center md:text-right">
-              Sistema telefônico completo hospedado na nuvem, eliminando a necessidade de equipamentos físicos e reduzindo custos operacionais.
-            </p>
+
+        <!-- Passo 2 -->
+        <div id="step2-2" class="absolute flex items-center gap-2 z-30" style="left: 140px; top: 80px;">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">02</div>
           </div>
-          <ul class="space-y-2 mb-6 text-lg text-right w-[25rem] max-w-full">
-            <li class="flex items-center justify-end"><span class="text-gray-700">Atendimento automático</span><i class="fas fa-check-circle text-green-500 ml-2"></i></li>
-            <li class="flex items-center justify-end"><span class="text-gray-700">Filas de atendimento</span><i class="fas fa-check-circle text-green-500 ml-2"></i></li>
-            <li class="flex items-center justify-end"><span class="text-gray-700">Gravação de chamadas</span><i class="fas fa-check-circle text-green-500 ml-2"></i></li>
-            <li class="flex items-center justify-end"><span class="text-gray-700">Relatórios detalhados</span><i class="fas fa-check-circle text-green-500 ml-2"></i></li>
-            <li class="flex items-center justify-end"><span class="text-gray-700">Portabilidade numérica</span><i class="fas fa-check-circle text-green-500 ml-2"></i></li>
-            <li class="flex items-center justify-end">
-              <span class="new-badge ml-2">Novo</span>
-              <span class="text-gray-700">Análise de sentimento com IA</span>
-              <i class="fas fa-check-circle text-green-500 ml-2"></i>
-            </li>
-          </ul>
+          <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+            <h3 class="font-semibold text-gray-600">Filas de atendimento</h3>
+          </div>
+        </div>
+
+        <!-- Passo 3 -->
+        <div id="step3-2" class="absolute flex items-center gap-2 z-30" style="left: 220px; top: 210px;">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">03</div>
+          </div>
+          <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+            <h3 class="font-semibold text-gray-600">Gravação de chamadas</h3>
+          </div>
+        </div>
+
+        <!-- Passo 4 -->
+        <div id="step4-2" class="absolute flex items-center gap-2 z-30" style="left: 140px; top: 360px;">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">04</div>
+          </div>
+          <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+            <h3 class="font-semibold text-gray-600">Relatórios detalhados</h3>
+          </div>
+        </div>
+
+        <!-- Passo 5 -->
+        <div id="step5-2" class="absolute flex items-center gap-2 z-30" style="left: 0; top: 420px;">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">05</div>
+          </div>
+          <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+            <h3 class="font-semibold text-gray-600">Portabilidade numérica</h3>
+          </div>
         </div>
       </div>
     </div>
+    
+    
+    <div class="flex flex-col gap-6">
+      <div class="w-full h-[54px]"></div>
+      <div class="flex justify-center items-center h-[250px]">
+        <h3 class="text-3xl uppercase sm:text-8xl font-bold text-blue-600 break-words text-center">
+          PABX em Nuvem
+        </h3>
+      </div>
+      <div class="flex justify-center items-center">
+        <a class="inline-flex items-center bg-gray-600 text-white hover:bg-gray-400 font-medium py-3 px-8 rounded-lg transition duration-300 text-lg cursor-pointer" href="#service-details-2" target="_blank">
+        Saiba mais
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   </div>
 </section>

@@ -104,8 +104,8 @@ function resetAutoSlide() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const offsetX = -25; // deslocamento horizontal
-  const offsetY = -35; // deslocamento vertical
+  const offsetX = -25;
+  const offsetY = -35;
 
   const polyline = document.querySelector("svg polyline");
   if (!polyline) return;
@@ -119,12 +119,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .map(p => p.split(",").map(Number));
 
   points.forEach((point, index) => {
-    const step = document.querySelector(`#step${index + 1}`);
-    if (step) {
+    // Busca todos os steps que correspondem a esse número (slide 1 e slide 2)
+    const steps = document.querySelectorAll(`[id^="step${index + 1}"]`);
+    steps.forEach(step => {
       const [x, y] = point;
-      // Corrige posição com base no deslocamento do viewBox
       step.style.left = `${(x - minX) + offsetX}px`;
       step.style.top = `${(y - minY) + offsetY}px`;
-    }
+    });
   });
 });
