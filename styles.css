@@ -32,9 +32,7 @@ body {
     }
   }
 
-#home {
-    clip-path: polygon(100% 0, 100% 100%, 50% 93%, 0 100%, 0 0);
-}
+
 /* Estilo para a imagem de fundo da capa */
 .hero-bg-image {
     position: absolute;
