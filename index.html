@@ -102,7 +102,7 @@
     <div class="banner-slide min-w-full h-full px-4">
 
       <div class="grid grid-cols-1 md:grid-cols-[auto_auto] gap-[15rem] w-full h-full sm:p-6">
-        <div class="grid grid-cols-[200px_1fr] items-center px-10">
+        <div class="grid grid-cols-[200px_1fr] lg:gap-[5rem] lg:ml-[5rem] items-center px-10">
           <div class="flex justify-center items-center">
   <!--           <div class="w-[25rem] max-w-full">
               <p class="text-gray-600 text-xl mb-6 px-4 md:px-0 text-center md:text-left">
@@ -205,7 +205,7 @@
     <div class="banner-slide min-w-full h-full px-4">
 
   <div class="grid grid-cols-1 md:grid-cols-[auto_auto] gap-[15rem] w-full h-full sm:p-6">
-    <div class="grid grid-cols-[200px_1fr] items-center px-10">
+    <div class="grid grid-cols-[200px_1fr] lg:gap-[5rem] lg:ml-[5rem] items-center px-10">
       <div class="flex justify-center items-center w-full h-full">
         <div class="relative flex justify-center items-center w-full h-full">
           <i class="fa-solid fa-cloud text-[10rem] sm:text-[200px] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
@@ -379,7 +379,7 @@
     </div>
 
     <!-- Detalhes do PABX em Nuvem com imagens -->
-    <div class="service-details mx-auto">
+    <div id="service-details-2" class="service-details mx-auto">
       <h3 class="service-details-title text-blue-800">PABX em Nuvem</h3>
 
       <!-- Imagem 1 -->
@@ -570,44 +570,38 @@
        </h3>
        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Card Telefone -->
-        <div class="flex flex-col items-center text-center p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
-         <div class="bg-blue-500 p-4 rounded-full mb-4">
-          <i class="fas fa-phone text-2xl text-white">
-          </i>
-         </div>
-         <h4 class="font-bold text-white mb-2">
-          Telefone
-         </h4>
-         <p class="text-blue-200">
-          (81) 2011-6700
-         </p>
-        </div>
+        <a href="tel:+558120116700" class="block">
+          <div class="flex flex-col items-center text-center w-full h-full p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+            <div class="bg-blue-500 p-4 rounded-full mb-4">
+              <i class="fas fa-phone text-2xl text-white"></i>
+            </div>
+            <h4 class="font-bold text-white mb-2">Telefone</h4>
+            <p class="text-blue-200">(81) 2011-6700</p>
+          </div>
+        </a>
+        
         <!-- Card Email -->
-        <div class="flex flex-col items-center text-center p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
-         <div class="bg-blue-500 p-4 rounded-full mb-4">
-          <i class="fas fa-envelope text-2xl text-white">
-          </i>
-         </div>
-         <h4 class="font-bold text-white mb-2">
-          Email
-         </h4>
-         <p class="text-blue-200">
-          contato@htech-solucoes.com
-         </p>
-        </div>
+        <a href="mailto:contato@htech-solucoes.com" class="block">
+          <div class="flex flex-col items-center text-center w-full h-full p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+            <div class="bg-blue-500 p-4 rounded-full mb-4">
+              <i class="fas fa-envelope text-2xl text-white"></i>
+            </div>
+            <h4 class="font-bold text-white mb-2">Email</h4>
+            <p class="text-blue-200">contato@htech-solucoes.com</p>
+          </div>
+        </a>
+        
         <!-- Card WhatsApp -->
-        <div class="flex flex-col items-center text-center p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
-         <div class="bg-blue-500 p-4 rounded-full mb-4">
-          <i class="fab fa-whatsapp text-2xl text-white">
-          </i>
-         </div>
-         <h4 class="font-bold text-white mb-2">
-          WhatsApp
-         </h4>
-         <a class="text-blue-200 hover:text-white transition duration-300 font-medium" href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes." target="_blank">
-          Clique para conversar
-         </a>
-        </div>
+        <a href="https://wa.me/558120116700?text=Ola!+Cheguei+atraves+do+site+e+gostaria+de+mais+informacoes." target="_blank" class="block">
+          <div class="flex flex-col items-center text-center w-full h-full p-6 bg-gray-600 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+            <div class="bg-blue-500 p-4 rounded-full mb-4">
+              <i class="fab fa-whatsapp text-2xl text-white"></i>
+            </div>
+            <h4 class="font-bold text-white mb-2">WhatsApp</h4>
+            <p class="text-blue-200">Clique para conversar</p>
+          </div>
+        </a>
+        
        </div>
       </div>
      </div>
