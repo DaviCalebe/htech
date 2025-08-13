@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+    --cloud-move-left: -2.5rem;
+    --cloud-mid-left: -2rem;
+    --cloud-move-right: 3rem;
+    --cloud-mid-right: 2rem;
+  }  
+
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -386,30 +393,32 @@ body {
 }
 
 @keyframes cloudMoveLeft {
-  0%, 100% {
-    transform: translateX(var(--cloud-move-left, -3rem));
-  }
-  50% {
-    transform: translateX(var(--cloud-mid-left, -2rem));
-  }
+  0%, 100% { transform: translateX(var(--cloud-move-left, -2.5rem)); }
+  50% { transform: translateX(var(--cloud-mid-left, -2rem)); }
 }
 
 @keyframes cloudMoveRight {
-  0%, 100% {
-    transform: translateX(var(--cloud-move-right, 3rem));
-  }
-  50% {
-    transform: translateX(var(--cloud-mid-right, 2rem));
-  }
+  0%, 100% { transform: translateX(var(--cloud-move-right, 3rem)); }
+  50% { transform: translateX(var(--cloud-mid-right, 2rem)); }
 }
 
 .animate-cloud-left {
-  animation: cloudMoveLeft 8s ease-in-out infinite;
+    animation: cloudMoveLeft 8s ease-in-out infinite;
+}
+.animate-cloud-right {
+    animation: cloudMoveRight 8s ease-in-out infinite;
 }
 
-.animate-cloud-right {
-  animation: cloudMoveRight 8s ease-in-out infinite;
-}
+
+@media (max-width: 640px) { /* SM e menores */
+    :root {
+      --cloud-move-left: -1rem;
+      --cloud-mid-left: -1rem;
+      --cloud-move-right: 1rem;
+      --cloud-mid-right: 1rem;
+    }
+  }
+  
 
 @keyframes floatY {
   0%, 100% {
