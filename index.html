@@ -70,7 +70,7 @@
     </div>
   </header>
 
-  <section class="relative bg-gray-50 overflow-hidden min-h-[55rem] sm:min-h-[65rem] xl:min-h-full" id="home">
+  <section class="relative bg-gray-50 overflow-hidden min-h-[58rem] sm:min-h-[65rem] xl:min-h-full" id="home">
     <!-- Setas de navegação -->
     <div class="arrow left absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-800 text-3xl cursor-pointer z-10">&lt;</div>
     <div class="arrow right absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-800 text-3xl cursor-pointer z-10">&gt;</div>
@@ -103,7 +103,7 @@
       <div class="banner-slide min-w-full h-full px-4 sm:mt-14 xl:mt-8">
 
         <div class="grid grid-rows-2 xl:grid-rows-0 gap-[20rem] sm:gap-[25rem] xl:grid-cols-[auto_auto] xl:gap-[15rem] w-full h-full xl:p-6 ">
-          <div class="grid grid-cols-[180px_1fr] md:grid-cols-2 xl:grid-cols-[200px_1fr] 2xl:gap-[5rem] 2xl:ml-[5rem] justify-center items-center px-10">
+          <div class="grid -ml-10 xxs:-ml-5 xs:-ml-0 grid-cols-[110px_1fr] xs:grid-cols-[180px_1fr] scale-[0.80] xxs:scale-[0.95] xs:scale-100 md:grid-cols-2 xl:grid-cols-[200px_1fr] 2xl:gap-[5rem] 2xl:ml-[5rem] justify-center items-center sm:px-10">
             <div class="flex justify-center items-center">
               <!--           <div class="w-[25rem] max-w-full">
               <p class="text-gray-600 text-xl mb-6 px-4 md:px-0 text-center md:text-left">
@@ -205,12 +205,12 @@
       <div class="banner-slide min-w-full h-full px-4 sm:mt-14 xl:mt-8">
 
         <div class="grid grid-rows-2 gap-[20rem] sm:gap-[25rem] xl:grid-cols-[auto_auto] xl:gap-[15rem] w-full h-full xl:p-6 ">
-          <div class="grid grid-cols-[180px_1fr] md:grid-cols-2 xl:grid-cols-[200px_1fr] xl:gap-[5rem] 2xl:ml-[5rem] justify-center items-center px-10">
-            <div class="flex justify-center items-center w-full h-full">
+          <div class="grid -ml-10 xxs:-ml-5 xs:-ml-0 grid-cols-[110px_1fr] xs:grid-cols-[180px_1fr] scale-[0.80] xxs:scale-[0.95] xs:scale-100 md:grid-cols-2 xl:grid-cols-[200px_1fr] 2xl:gap-[5rem] 2xl:ml-[5rem] justify-center items-center sm:px-10">
+            <div class="flex justify-center items-center w-full h-full xs:ml-10">
               <div class="relative flex justify-center items-center w-full h-full">
-                <i class="fa-solid fa-cloud text-[10rem] w-[180px] sm:text-[130px] md:text-[200px] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
-                <i class="fa-solid fa-cloud text-[10rem] w-[180px] sm:text-[130px] md:text-[200px] text-blue-600 feature-icon absolute z-10 animate-cloud-left"></i>
-                <img src="./assets/pabx-icon.png" alt="pabx em nuvem" class="w-[180px] md:w-[200px] absolute z-20 animate-float" />
+                <i class="fa-solid fa-cloud text-[100px] xs:text-[130px] sm:text-[150px] md:text-[200px] text-gray-400 feature-icon absolute z-0 animate-cloud-right"></i>
+                <i class="fa-solid fa-cloud text-[100px] xs:text-[130px] sm:text-[150px] md:text-[200px] text-blue-600 feature-icon absolute z-10 animate-cloud-left"></i>
+                <img src="./assets/pabx-icon.png" alt="pabx em nuvem" class="w-[100px] xs:w-[130px] sm:w-[150px] md:w-[200px] absolute z-20 animate-float" />
               </div>
             </div>
 
@@ -626,6 +626,21 @@
       </div>
     </div>
   </footer>
+  <script>
+  tailwind.config = {
+    theme: {
+      screens: {
+        xxs: "422px", // smartphones muito pequenos
+        xs: "560px",    // smartphones pequenos
+        sm: "640px",    // smartphones médios
+        md: "768px",    // tablets
+        lg: "1024px",   // notebooks
+        xl: "1366px",   // laptops widescreen
+        "2xl": "1920px" // monitores grandes
+      }
+    }
+  }
+</script>
   <script src="https://unpkg.com/basiclightbox/dist/basicLightbox.min.js"></script>
   <script src="script.js"></script>
 </body>
