@@ -65,14 +65,23 @@ const bannerContent = document.querySelector('.banner-content');
 const slides = document.querySelectorAll('.banner-slide');
 const leftArrow = document.querySelector('.arrow.left');
 const rightArrow = document.querySelector('.arrow.right');
+const homeSection = document.querySelector('#home'); // pega a section
 
 let currentIndex = 0;
-
-const totalSlides = document.querySelectorAll('.banner-slide').length;
+const totalSlides = slides.length;
 
 function updateCarousel() {
   const offset = -currentIndex * 100; // Calcula o deslocamento horizontal
   bannerContent.style.transform = `translateX(${offset}%)`;
+
+  // Ajusta min-height conforme o slide
+  if (currentIndex === 0) {
+    homeSection.classList.remove("min-h-[58rem]", "sm:min-h-[65rem]");
+  } else {
+    if (!homeSection.classList.contains("min-h-[58rem]")) {
+      homeSection.classList.add("min-h-[58rem]", "sm:min-h-[65rem]");
+    }
+  }
 }
 
 leftArrow.addEventListener('click', () => {
@@ -87,21 +96,24 @@ rightArrow.addEventListener('click', () => {
   resetAutoSlide(); // Reinicia o temporizador ao clicar
 });
 
-/* // Inicializa o carrossel
-// Função para mudar automaticamente a cada 5 segundos
+// Inicializa o carrossel automático (5s)
 let autoSlide = setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length; // Passa para a próxima página
   updateCarousel();
-}, 5000); // 5000ms = 5 segundos */
+}, 5000); // 5000ms = 5 segundos
 
 // Função para reiniciar o temporizador de mudança automática
 function resetAutoSlide() {
   clearInterval(autoSlide); // Para o temporizador atual
   autoSlide = setInterval(() => {
-      currentIndex = (currentIndex + 1) % slides.length; // Passa para a próxima página
-      updateCarousel();
+    currentIndex = (currentIndex + 1) % slides.length; // Passa para a próxima página
+    updateCarousel();
   }, 5000);
 }
+
+// Aplica a configuração inicial logo ao carregar
+updateCarousel();
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const offsetX = -25;
