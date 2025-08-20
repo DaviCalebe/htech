@@ -27,9 +27,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         let offset = 80;
 
         // exceções para IDs específicos
-        if (targetId === "#service-details-1" || targetId === "#service-details-2") {
+        if (
+          targetId === "#service-details-1" || 
+          targetId === "#service-details-2" || 
+          targetId === "#service-details-3"
+        ) {
           offset = 110; // valor diferente
         }
+        
 
         window.scrollTo({
           top: targetElement.offsetTop - offset,

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/png" href="./assets/logo-blue-cloud.png">
 </head>
 
 <body class="bg-gray-50">
@@ -21,7 +22,7 @@
     </i>
   </a>
   <header class="fixed w-full h-[6rem] bg-white shadow-md z-50">
-    <div class="container mx-auto flex justify-between items-center px-2 sm:px-0 h-full">
+    <div class="container mx-auto flex justify-between items-center px-2 2xl:px-10 sm:px-0 h-full">
       <div class="flex items-center h-full">
         <div class="logo-container h-full">
           <img alt="Logo" class="logo h-[80%]" src="./assets/logo-htech.png" />
@@ -99,17 +100,103 @@
       </div>
     </div>
 
-      <!-- Slide 2: Plataforma de Atendimento Multicanal -->
+      <!-- Slide 2: Agentes de IA -->
       <div class="banner-slide min-w-full h-full px-4 sm:mt-14 xl:mt-8">
 
         <div class="grid grid-rows-2 xl:grid-rows-0 gap-[20rem] sm:gap-[25rem] xl:grid-cols-[auto_auto] xl:gap-[15rem] w-full h-full xl:p-6 ">
           <div class="grid -ml-10 xxs:-ml-5 xs:-ml-0 grid-cols-[110px_1fr] xs:grid-cols-[180px_1fr] scale-[0.80] xxs:scale-[0.95] xs:scale-100 md:grid-cols-2 xl:grid-cols-[200px_1fr] 2xl:gap-[5rem] 2xl:ml-[5rem] justify-center items-center sm:px-10">
             <div class="flex justify-center items-center">
-              <!--           <div class="w-[25rem] max-w-full">
-              <p class="text-gray-600 text-xl mb-6 px-4 md:px-0 text-center md:text-left">
-                Automatize o atendimento ao cliente com gerenciamento de conversas inteligente que utiliza IA para compreender e responder às necessidades dos seus clientes.
-              </p>
-            </div> -->
+              <div class="inline-block animate-float w-auto h-auto">
+                <img src="./assets/icon-ia.png" alt="agentes de ia" class="w-[130px] sm:w-[180px] md:w-[200px]" />
+              </div>
+            </div>
+
+            <div class="relative w-60 scale-[0.75] sm:scale-[0.85] md:scale-100">
+              <!-- SVG ocupando todo o container -->
+              <svg viewBox="95 45 100 410" width="100" height="410" preserveAspectRatio="xMidYMid meet">
+                <polyline points="100,50 171,130 190,247 171,352 100,444" fill="none" stroke="rgb(147,197,253)" stroke-width="4" />
+              </svg>
+
+              <!-- Passo 1 -->
+              <div id="step1-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 0; top: 0;">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">01</div>
+                </div>
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
+                  <h3 class="font-semibold text-gray-600">Atendimento 24/7</h3>
+                </div>
+              </div>
+
+              <!-- Passo 2 -->
+              <div id="step2-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 140px; top: 80px;">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">02</div>
+                </div>
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
+                  <h3 class="font-semibold text-gray-600">Qualificação de leads</h3>
+                </div>
+              </div>
+
+              <!-- Passo 3 -->
+              <div id="step3-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 220px; top: 210px;">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">03</div>
+                </div>
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
+                  <h3 class="font-semibold text-gray-600">Agendamento automático</h3>
+                </div>
+              </div>
+
+              <!-- Passo 4 -->
+              <div id="step4-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 140px; top: 360px;">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">04</div>
+                </div>
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
+                  <h3 class="font-semibold text-gray-600">Integração WhatsApp e Instagram</h3>
+                </div>
+              </div>
+
+              <!-- Passo 5 -->
+              <div id="step5-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 0; top: 420px;">
+                <div class="flex flex-col items-center">
+                  <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">05</div>
+                </div>
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
+                  <h3 class="font-semibold text-gray-600">Resultados já no primeiro mês</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex flex-col gap-20 xl:gap-30">
+            <div class="flex flex-row justify-center items-center w-full gap-4 z-10 text-gray-600 text-2xl md:text-3xl rounded-xl p-2">
+              <i class="fas fa-robot"></i>
+              <i class="fas fa-brain"></i>
+              <i class="fas fa-network-wired"></i>
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="flex justify-center items-center h-[250px]">
+              <h3 class="text-5xl uppercase md:text-8xl uppercase font-bold text-blue-600 break-words text-center">
+                Agentes de IA
+              </h3>
+            </div>
+            <div class="flex justify-center items-center">
+              <a class="inline-flex items-center bg-gray-600 text-white hover:bg-gray-400 font-medium py-3 px-8 rounded-lg transition duration-300 text-lg cursor-pointer" href="#service-details-1" target="_blank">
+                Saiba mais
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Plataforma de Atendimento Multicanal -->
+      <div class="banner-slide min-w-full h-full px-4 sm:mt-14 xl:mt-8">
+
+        <div class="grid grid-rows-2 xl:grid-rows-0 gap-[20rem] sm:gap-[25rem] xl:grid-cols-[auto_auto] xl:gap-[15rem] w-full h-full xl:p-6 ">
+          <div class="grid -ml-10 xxs:-ml-5 xs:-ml-0 grid-cols-[110px_1fr] xs:grid-cols-[180px_1fr] scale-[0.80] xxs:scale-[0.95] xs:scale-100 md:grid-cols-2 xl:grid-cols-[200px_1fr] 2xl:gap-[5rem] 2xl:ml-[5rem] justify-center items-center sm:px-10">
+            <div class="flex justify-center items-center">
               <div class="inline-block animate-float w-auto h-auto">
                 <img src="./assets/chatbot.png" alt="chatbot" class="w-[130px] sm:w-[180px] md:w-[200px]" />
               </div>
@@ -123,51 +210,51 @@
               </svg>
 
               <!-- Passo 1 -->
-              <div id="step1" class="absolute flex items-center gap-2 z-30" style="left: 0; top: 0;">
+              <div id="step1" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 0; top: 0;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">01</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Integração com WhatsApp</h3>
                 </div>
               </div>
 
               <!-- Passo 2 - mais pra baixo -->
-              <div id="step2" class="absolute flex items-center gap-2 z-30" style="left: 140px; top: 80px;">
+              <div id="step2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 140px; top: 80px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">02</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Processamento de linguagem natural</h3>
                 </div>
               </div>
 
               <!-- Passo 3 -->
-              <div id="step3" class="absolute flex items-center gap-2 z-30" style="left: 220px; top: 210px;">
+              <div id="step3" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 220px; top: 210px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">03</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Personalização completa</h3>
                 </div>
               </div>
 
               <!-- Passo 4 - mais pra cima -->
-              <div id="step4" class="absolute flex items-center gap-2 z-30" style="left: 140px; top: 360px;">
+              <div id="step4" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 140px; top: 360px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">04</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Análise de sentimentos</h3>
                 </div>
               </div>
 
               <!-- Passo 5 -->
-              <div id="step5" class="absolute flex items-center gap-2 z-30" style="left: 0; top: 420px;">
+              <div id="step5" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 0; top: 420px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">05</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Agentes de IA</h3>
                 </div>
               </div>
@@ -191,7 +278,7 @@
               </h3>
             </div>
             <div class="flex justify-center items-center">
-              <a class="inline-flex items-center bg-gray-600 text-white hover:bg-gray-400 font-medium py-3 px-8 rounded-lg transition duration-300 text-lg cursor-pointer" href="#service-details-1" target="_blank">
+              <a class="inline-flex items-center bg-gray-600 text-white hover:bg-gray-400 font-medium py-3 px-8 rounded-lg transition duration-300 text-lg cursor-pointer" href="#service-details-2" target="_blank">
                 Saiba mais
               </a>
 
@@ -201,7 +288,7 @@
         </div>
       </div>
 
-      <!-- Slide 3: PABX em Nuvem -->
+      <!-- Slide 4: PABX em Nuvem -->
       <div class="banner-slide min-w-full h-full px-4 sm:mt-14 xl:mt-8">
 
         <div class="grid grid-rows-2 gap-[20rem] sm:gap-[25rem] xl:grid-cols-[auto_auto] xl:gap-[15rem] w-full h-full xl:p-6 ">
@@ -221,51 +308,51 @@
               </svg>
 
               <!-- Passo 1 -->
-              <div id="step1-2" class="absolute flex items-center gap-2 z-30" style="left: 0; top: 0;">
+              <div id="step1-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 0; top: 0;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">01</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Atendimento automático</h3>
                 </div>
               </div>
 
               <!-- Passo 2 -->
-              <div id="step2-2" class="absolute flex items-center gap-2 z-30" style="left: 140px; top: 80px;">
+              <div id="step2-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 140px; top: 80px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">02</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Filas de atendimento</h3>
                 </div>
               </div>
 
               <!-- Passo 3 -->
-              <div id="step3-2" class="absolute flex items-center gap-2 z-30" style="left: 220px; top: 210px;">
+              <div id="step3-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 220px; top: 210px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">03</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Gravação de chamadas</h3>
                 </div>
               </div>
 
               <!-- Passo 4 -->
-              <div id="step4-2" class="absolute flex items-center gap-2 z-30" style="left: 140px; top: 360px;">
+              <div id="step4-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 140px; top: 360px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">04</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Relatórios detalhados</h3>
                 </div>
               </div>
 
               <!-- Passo 5 -->
-              <div id="step5-2" class="absolute flex items-center gap-2 z-30" style="left: 0; top: 420px;">
+              <div id="step5-2" class="absolute flex items-center gap-2 z-30 cursor-pointer" style="left: 0; top: 420px;">
                 <div class="flex flex-col items-center">
                   <div class="w-12 h-12 rounded-full bg-gray-600 text-white flex items-center justify-center font-bold">05</div>
                 </div>
-                <div class="bg-blue-100 p-3 rounded-lg shadow-sm w-[250px]">
+                <div class="bg-blue-100 hover:bg-blue-200 hover:scale-105 p-3 transition-all duration-300 ease-in-out rounded-lg shadow-sm w-[250px]">
                   <h3 class="font-semibold text-gray-600">Portabilidade numérica</h3>
                 </div>
               </div>
@@ -273,7 +360,7 @@
           </div>
 
 
-          <div class="flex flex-col gap-20 xl:gap-12">
+          <div class="flex flex-col gap-20 xl:gap-30">
             <div class="flex flex-row justify-center items-center w-full gap-4 z-10 text-gray-600 text-2xl md:text-3xl rounded-xl p-2">
               <i class="fa-solid fa-phone"></i>
               <i class="fa-solid fa-headset"></i>
@@ -286,7 +373,7 @@
               </h3>
             </div>
             <div class="flex justify-center items-center">
-              <a class="inline-flex items-center bg-gray-600 text-white hover:bg-gray-400 font-medium py-3 px-8 rounded-lg transition duration-300 text-lg cursor-pointer" href="#service-details-2" target="_blank">
+              <a class="inline-flex items-center bg-gray-600 text-white hover:bg-gray-400 font-medium py-3 px-8 rounded-lg transition duration-300 text-lg cursor-pointer" href="#service-details-3" target="_blank">
                 Saiba mais
               </a>
             </div>
@@ -307,9 +394,35 @@
         <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
       </div>
 
+      <!-- Detalhes de Agentes de IA com imagens -->
+      <div id="service-details-1" class="service-details mx-auto mt-[5rem]">
+        <h3 class="service-details-title text-7xl text-center text-blue-800">Agentes de IA</h3>
+
+        <!-- Imagem 3 - Agentes de IA -->
+        <div class="flex flex-col launch-container highlight-glow mb-12">
+          <div class="launch-badge">Lançamento</div>
+          <div class="report-image-container">
+            <a href="./assets/agentes-IA.png" class="glightbox" data-gallery="servicos" data-title="Agentes de IA">
+              <img alt="Agentes de IA" class="report-image" src="./assets/agentes-IA.png" />
+            </a>
+          </div>
+          <div class="service-image-description bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-500 mt-6">
+            <div class="flex items-center">
+              <h4 class="font-bold text-xl mb-2 text-purple-600">Agentes de IA</h4>
+              <span class="new-badge ml-3">Novo</span>
+            </div>
+            <p class="text-gray-700 mb-4">
+              Nossos agentes de IA revolucionam o atendimento ao cliente, oferecendo respostas precisas e personalizadas 24 horas por dia, 7 dias por semana, sem intervenção humana.
+            </p>
+            <!-- conteúdo extra omitido para brevidade -->
+          </div>
+        </div>
+      </div>
+
+
       <!-- Detalhes da Plataforma de Atendimento Multicanal com imagens -->
-      <div id="service-details-1" class="service-details mx-auto">
-        <h3 class="service-details-title text-4xl text-blue-800">Plataforma de Atendimento Multicanal</h3>
+      <div id="service-details-2" class="service-details mx-auto mt-[5rem]">
+        <h3 class="service-details-title text-7xl text-center text-blue-800">Plataforma de Atendimento Multicanal</h3>
 
         <!-- Imagem 1 -->
         <div class="mb-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -359,31 +472,11 @@
           </div>
         </div>
 
-        <!-- Imagem 3 - Agentes de IA -->
-        <div class="flex flex-col launch-container highlight-glow mb-12">
-          <div class="launch-badge">Lançamento</div>
-          <div class="report-image-container">
-            <a href="./assets/agentes-IA.png" class="glightbox" data-gallery="servicos" data-title="Agentes de IA">
-              <img alt="Agentes de IA" class="report-image" src="./assets/agentes-IA.png" />
-            </a>
-          </div>
-          <div class="service-image-description bg-gradient-to-r from-purple-50 to-blue-50 border-l-4 border-purple-500 mt-6">
-            <div class="flex items-center">
-              <h4 class="font-bold text-xl mb-2 text-purple-600">Agentes de IA</h4>
-              <span class="new-badge ml-3">Novo</span>
-            </div>
-            <p class="text-gray-700 mb-4">
-              Nossos agentes de IA revolucionam o atendimento ao cliente, oferecendo respostas precisas e personalizadas 24 horas por dia, 7 dias por semana, sem intervenção humana.
-            </p>
-            <!-- conteúdo extra omitido para brevidade -->
-          </div>
-        </div>
-
       </div>
 
       <!-- Detalhes do PABX em Nuvem com imagens -->
-      <div id="service-details-2" class="service-details mx-auto">
-        <h3 class="service-details-title text-4xl text-blue-800">PABX em Nuvem</h3>
+      <div id="service-details-3" class="service-details mx-auto mt-[5rem]">
+        <h3 class="service-details-title text-7xl text-center text-blue-800">PABX em Nuvem</h3>
 
         <!-- Imagem 1 -->
         <div class="mb-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -459,7 +552,7 @@
     </div>
   </section>
   <section class="py-20 bg-gray-50" id="quem-somos">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 2xl:px-[10rem]">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
           Quem Somos
